@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  db:
+    image: postgres
+    container_name: apiHolding
+    restart: always
+    tty: true
+    ports:
+      - "5432:5432"
+    volumes:
+      - .docker/dbdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=132887
+      - POSTGRES_DB=apiholding

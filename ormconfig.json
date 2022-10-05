@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "132887",
+  "database": "apiholding",
+  "$schema": "public",
+  "entities": [
+    "./src/modules/typeorm/entities/*{.ts,.js}"
+],
+  "migrations": [
+    "./src/shared/typeorm/migrations/*{.ts,.js}"
+  ],
+  "cli": {
+    "migrationsDir": "./src/shared/typeorm/migrations"
+  }
+}
