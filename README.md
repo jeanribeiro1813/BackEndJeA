@@ -1,7 +1,11 @@
 # BackEndJeA
 
-## Dar um docker-compose up -d 
+## Executar Servidor em Typescript 
 
-## executar Servidor
+docker-compose up -d 
 
 npm run dev
+
+## Dar um build para Javascript
+
+npm run build
